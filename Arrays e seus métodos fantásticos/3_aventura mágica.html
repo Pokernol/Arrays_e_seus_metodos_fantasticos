@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+   alert ("Drofo e Topper estão em uma aventura mágica e iremos acompalha-los vendo o inventário de cada um dos dois aventureiros durante sua jornada.");
+
+    //Personagens
+    var drofo = ["anel da invisibilidade 1", "pares de botas mágicas 2", "poção do sono 1", "poções da inocência 2"];
+    var topper = ["capa da invisibilidade 1", "pedra do despertar 1", "varinha das varinhas 1", "poção da inocência 1","poções da mentira 2", "poção anti-inteligência 1"];
+
+    /*Drofo terá um anel da invisibilidade, dois pares de botas mágicas, uma poção do sono e duas poções da inocência em seu inventário e nessa ordem.*/
+
+    alert("O inventário de Drofo no incio de sua aventura estava assim: " + drofo);
+
+    /*Torper terá uma capa da invisibilidade, uma pedra do despertar, uma varinha das varinhas, uma poção da inocência e duas poções da mentira, poção anti-inteligência e nessa ordem.*/
+
+    alert("O inventário de Topper no incio de sua aventura estava assim: " + topper);
+
+    /*No meio de sua jornada, Torper consumiu uma das poções da mentira, perdeu sua pedra e ganhou um par de botar mágicas do Drofo, achou um escudo mágico e uma espada mágica. 
+    Descreva cada uma das ações acima. utilizando código (utilize comentários para ficar mais claro). */
+
+    topper.splice(1,1);
+    topper.splice(3,1); 
+    topper.push("poções da mentira 1", "botas mágicas do Drofo 1", "escudo mágico 1", "espada mágica 1");
+    alert("O inventário de Topper no meio de sua aventura estava assim: " + topper);
+
+    /*No meio da sua jornada, Drofo, ganhou mais uma bota mágica, usou sua poção do sono e consumiu a poção anti-inteligência do Torper, encontrou um ovo de dragão e uma coxinha.
+    Descreva cada uma das ações acima. utilizando código.*/
+
+    drofo.splice(2,1);
+    topper.splice(3,1);
+    drofo.push("ovo de dragão 1,coxinha 1")
+    alert("O inventário de Drofo no meio de sua aventura estava assim: " + drofo);
+
+    //Exiba o resultado final de cada um dos inventários utilizando "document.write"
+
+    document.write("Os dois aventureiros em fim descansaram de sua grande jornada, e seus items quando foram comparar estavam assim:" + "<br>" + "Drofo: " + drofo + "<br>" + "Topper: " + topper);
+
+    </script>
+
+
+</body>
+</html>

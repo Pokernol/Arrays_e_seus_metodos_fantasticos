@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+        <script>
+        // ARRAYS
+        var mais_50 = [];
+        var menos_50 = [];
+        //ALERT INICIAL
+        alert ("Olá usuário! Digite 12 números diferentes, os mesmos serão armazenados e informados a você no final em dois grupos diferentes, sendo um com números acima de 50 e outro com números abaixo de 50.");
+
+        /*for (var loop = 0; loop < 12; loop++)  {
+        var abacate = parseInt(prompt("por favor digite um numero de sua escolha:"));
+        if (abacate > 50 ){
+            mais_50.push(abacate);
+        } else {
+            menos_50.push(abacate);
+        }
+        for (var loop = 0; loop < 12; loop++)  {
+        var abacate = parseInt(prompt("por favor digite um numero de sua escolha:"));
+        }
+       
+        if (abacate > 50){
+            mais_50.push(abacate);
+        } else {
+            menos_50.push(abacate);
+        }*/
+    
+        //LOOP NUMERO
+        for (var loop = 0; loop < 12; loop++)  {
+        var abacate = prompt("por favor digite um numero de sua escolha:");
+        if (abacate > 50){
+            mais_50.push(abacate);
+        } else {
+            menos_50.push(abacate);
+        }}
+        alert("E dos doze números são eles maiores que 50: " + mais_50);
+        alert("Dos doze números são eles menores que 50: " + menos_50);
+
+        </script>
+
+</body>
+</html>
